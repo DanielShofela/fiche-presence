@@ -19,6 +19,13 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+img {
+    position: relative;
+    margin-bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 h1 {
     text-align: center;
     color: #1a73e8;
