@@ -34,7 +34,7 @@ function displayRecords() {
             <p><strong>Date:</strong> ${record.date}</p>
             <p><strong>Arrivée:</strong> ${record.heureArrivee}</p>
             <p><strong>Départ:</strong> ${record.heureDepart}</p>
-            <p><strong>Station:</strong> ${record.station}</p>
+            <p><strong>Situation:</strong> ${record.Situation}</p>
         `;
         recordsDiv.appendChild(recordElement);
     });
@@ -43,7 +43,7 @@ function displayRecords() {
 // Convertir les enregistrements en CSV
 function recordsToCSV() {
     const records = getRecords();
-    const headers = ['Nom', 'Date', 'Heure Arrivée', 'Heure Départ', 'Station'];
+    const headers = ['Nom', 'Date', 'Heure Arrivée', 'Heure Départ', 'Situation'];
     const csvRows = [headers];
 
     records.forEach(record => {
@@ -52,7 +52,7 @@ function recordsToCSV() {
             record.date,
             record.heureArrivee,
             record.heureDepart,
-            record.station
+            record.Situation
         ]);
     });
 
@@ -90,7 +90,7 @@ document.getElementById('presenceForm').addEventListener('submit', function(e) {
         date: document.getElementById('date').value,
         heureArrivee: document.getElementById('heureArrivee').value,
         heureDepart: document.getElementById('heureDepart').value,
-        station: document.getElementById('station').value
+        Situation: document.getElementById('Situation').value
     };
 
     addRecord(record);
