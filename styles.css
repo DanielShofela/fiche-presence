@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    position: relative;
+    margin-bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"] {
+    background-color: #1a73e8;
+    color: white;
+    flex: 1;
+}
+
+button[type="submit"]:hover {
+    background-color: #1557b0;
+}
+
+#exportBtn {
+    background-color: #34a853;
+    color: white;
+    flex: 1;
+}
+
+#exportBtn:hover {
+    background-color: #2d8a46;
+}
+
+#clearBtn {
+    background-color: #ea4335;
+    color: white;
+    flex: 1;
+}
+
+#clearBtn:hover {
+    background-color: #d33426;
+}
+
+#recordsList {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+#recordsList h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#records {
+    display: grid;
+    gap: 1rem;
+}
+
+.record-item {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+
+.record-item p {
+    margin: 0.25rem 0;
+}
